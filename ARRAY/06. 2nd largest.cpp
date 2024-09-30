@@ -14,11 +14,11 @@ int main(){
 			first = arr[i];
 		}
 	}
-	cout<<"Fist largest: "<<n<<endl;
+	cout<<"Fist largest: "<<first<<endl;
 	
 //	second largest element
 	for(int i=0; i<n; i++){
-		if(arr[i]>second && arr[i] != n){
+		if(arr[i]>second && arr[i] != first){
 			second = arr[i];
 		}
 	}
@@ -29,10 +29,10 @@ int main(){
 	for(int i=0; i<n; i++){
 		first = max(first, arr[i]);
 	}
-	cout<<"Fist largest: "<<n<<endl;
+	cout<<"Fist largest: "<<first<<endl;
 	
 	for(int i=0; i<n; i++){
-		if(arr[i]>second && arr[i] != n){
+		if(arr[i]>second && arr[i] != first){
 			second = arr[i];
 		}
 	}
